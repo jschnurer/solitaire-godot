@@ -62,8 +62,6 @@ func move_selected_card(stack):
 	
 	if check_for_victory():
 		win()
-	else:
-		win()
 
 func check_for_victory():
 	var aces_stacks = get_node("/root/Table/Aces").get_children()
