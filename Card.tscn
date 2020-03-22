@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://images/cards/purple_back.png" type="Texture" id=1]
+[ext_resource path="res://Card.gd" type="Script" id=2]
+
+[node name="Card" type="TextureRect"]
+margin_right = 691.0
+margin_bottom = 1056.0
+rect_scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+back_texture = ExtResource( 1 )
+selected_color = Color( 0.976471, 0.54902, 1, 1 )
+[connection signal="gui_input" from="." to="." method="_on_Card_gui_input"]

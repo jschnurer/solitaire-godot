@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://DrawPile.gd" type="Script" id=1]
+[ext_resource path="res://images/cards/purple_back.png" type="Texture" id=2]
+
+[node name="DrawPile" type="Panel"]
+margin_right = 103.0
+margin_bottom = 158.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CardBack" type="TextureRect" parent="."]
+margin_right = 691.0
+margin_bottom = 1056.0
+rect_scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="gui_input" from="." to="." method="_on_DrawPile_gui_input"]
